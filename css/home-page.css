@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.hero-section {
+    background-color: whitesmoke;
+    padding: 300px;
+
+}
+
+
+.search-container {
+    position: relative;
+    margin: 20px auto;
+    width: 300px;
+}
+
+
+.search-container input[type=text] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+
+    border: 1px;
+    outline: 1px solid black;
+}
+
+
+
+
+
+
+
+
+.Gallery {
+    background-color: #9A8C98;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 50px;
+    text-decoration: none;
+    /* Adjust padding as needed */
+}
+
+.products_img {
+    width: 200%;
+    /* Adjust the width of the image container */
+    max-width: 500px;
+    /* Set maximum width for responsiveness */
+    margin-right: 300px;
+    /* Add space between image and text */
+    flex-shrink: 0;
+    /* Prevent image from shrinking */
+}
+
+.products_img img {
+    width: 150%;
+    height: auto;
+}
+
+.gallery-text {
+    width: 50%;
+    /* Adjust the width of the text container */
+}
+
+/* Media Query for responsive layout */
+@media screen and (max-width: 768px) {
+    .Gallery {
+        flex-direction: column;
+        /* Stack elements vertically on smaller screens */
+        align-items: flex-start;
+        /* Align items to the start of the container */
+    }
+
+    .products_img {
+        width: 100%;
+        /* Set image container width to full on smaller screens */
+        margin-right: 0;
+        /* Remove margin for smaller screens */
+        margin-bottom: 20px;
+        /* Add space between image and text */
+    }
+
+    .gallery-text {
+        width: 100%;
+
+        /* Set text container width to full on smaller screens */
+    }
+}
+
+.gallery-text a {
+    color: black;
+    text-decoration: none;
+    /* Optional: Remove underline */
+}

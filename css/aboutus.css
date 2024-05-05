@@ -1,0 +1,71 @@
+.aboutusimg {
+    background-color: #9A8C98;
+}
+
+.Gallery{
+    display: flex;
+}
+
+
+.products_img {
+    width: 200%;
+    /* Adjust the width of the image container */
+    max-width: 500px;
+    /* Set maximum width for responsiveness */
+    margin-right: 300px;
+    /* Add space between image and text */
+    flex-shrink: 0;
+    /* Prevent image from shrinking */
+}
+
+.products_img img {
+    width: 150%;
+    height: auto;
+    padding: 40px;
+}
+
+.gallery-text {
+    width: 50%;
+    display: flex;
+    padding-right:100px;
+    
+    align-items: center;
+    
+
+    /* Adjust the width of the text container */
+
+}
+.aboutusimg h1 {
+    Padding:50px
+}
+
+/* Media Query for responsive layout */
+@media screen and (max-width: 768px) {
+    .Gallery {
+        flex-direction: column;
+        /* Stack elements vertically on smaller screens */
+        align-items: flex-start;
+        /* Align items to the start of the container */
+    }
+
+    .products_img {
+        width: 100%;
+        /* Set image container width to full on smaller screens */
+        margin-right: 0;
+        /* Remove margin for smaller screens */
+        margin-bottom: 20px;
+        /* Add space between image and text */
+    }
+
+    .gallery-text {
+        width: 100%;
+
+        /* Set text container width to full on smaller screens */
+    }
+}
+
+.gallery-text a {
+    color: black;
+    text-decoration: none;
+    /* Optional: Remove underline */
+}
